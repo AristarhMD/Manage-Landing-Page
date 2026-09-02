@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-950: #1d1e25;
+  --color-gray-900: #343a40;
+  --color-gray-950: #8d8d8d;
+  --color-gray-950: #fafafa;
+  --color-orange-400: #f3603c;
+  --color-orange-350: #f98f75;
+  --color-orange-50: #fff0ec;
+  --color-blue-950: #242d52;
+  --color-blue-50: #e5e9ea;
+  --color-red-500: #f33c3c;
+  --bg-gradient-1: linear-gradient(0% #000, 100% #00000099);
+  --font-sans: "Be Vietnam Pro", sans-serif;
+}
+
+@utility preset-1 {
+  @apply font-bold text-[3.5rem] leading-[115%] tracking-[-1px];
+}
+@utility preset-2 {
+  @apply font-bold text-[2.5rem] leading-[110%] tracking-[-0.75px];
+}
+
+@utility preset-3 {
+  @apply font-bold text-[2rem] leading-[140%] tracking-normal;
+}
+
+@utility preset-4-b {
+  @apply font-bold text-base leading-[145%] tracking-normal;
+}
+
+@utility preset-4-r {
+  @apply font-normal text-base leading-[162.5%] tracking-normal;
+}
+
+@utility preset-5-b {
+  @apply font-bold text-[0.8125rem] leading-[145%] tracking-normal;
+}
+
+@utility preset-5-m {
+  @apply font-medium text-[0.8125rem] leading-[145%] tracking-normal;
+}
+
+@utility preset-5-r {
+  @apply font-normal text-[0.8125rem] leading-[200%] tracking-normal;
+}
+
+@utility preset-6 {
+  @apply font-normal italic text-[0.625rem] leading-[150%] tracking-normal;
+}
