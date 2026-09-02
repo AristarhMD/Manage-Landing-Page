@@ -13,7 +13,9 @@
   --color-blue-950: #242d52;
   --color-blue-50: #e5e9ea;
   --color-red-500: #f33c3c;
-  --bg-gradient-1: linear-gradient(0% #000, 100% #00000099);
+  --background-image-gradient-1: linear-gradient(#00000000 0%, #000 100%);
+  --shadow-orangebtn: 0 15px 15px -10 #ff9f8e;
+  --shadow-whitebtn: 0 15px 15px -10 #db5943;
   --font-sans: "Be Vietnam Pro", sans-serif;
 }
 
@@ -50,4 +52,24 @@
 
 @utility preset-6 {
   @apply font-normal italic text-[0.625rem] leading-[150%] tracking-normal;
+}
+
+@utility orangeBtn {
+  @apply cursor-pointer bg-orange-400 preset-5-b text-white shadow-orangebtn hover:bg-orange-350 rounded-[22px] px-8 py-4;
+}
+
+@utility whiteBtn {
+  @apply cursor-pointer bg-white preset-5-b text-orange-400 shadow-whitebtn hover:text-orange-400/50 rounded-[22px] px-8 py-4;
+}
+
+@utility deskNavItem {
+  @apply cursor-pointer preset-5-m text-blue-950 hover:opacity-50;
+}
+
+@utility mobNavItem {
+  @apply cursor-pointer preset-4-b text-blue-950 hover:opacity-50;
+}
+
+@utility footerNavItem {
+  @apply cursor-pointer preset-4-r text-white hover:text-orange-400;
 }
