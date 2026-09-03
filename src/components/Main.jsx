@@ -1,12 +1,13 @@
 import { Button } from "./reusable/Button";
 import cardsData from "../feature.js";
 import { FeatureCard } from "./reusable/FeatureCard.jsx";
+import { Carousel } from "./Carousel.jsx";
 
 export function Main() {
   return (
-    <main>
+    <main className="flex flex-col gap-28 md:gap-24 xl:gap-33">
       {/* Content section */}
-      <section className="flex flex-col xl:flex-row items-center justify-between gap-6 px-6 md:px-12 xl:p-0 xl:mx-auto xl:w-277.5 mb-28 md:mb-24 xl:mb-33">
+      <section className="flex flex-col xl:flex-row items-center justify-between gap-6 px-6 md:px-12 xl:p-0 xl:mx-auto xl:w-277.5">
         <img
           src="../src/assets/illustration-intro.svg"
           alt="Hero image"
@@ -45,6 +46,20 @@ export function Main() {
               text={card.text}
             />
           ))}
+        </div>
+      </section>
+
+      {/* Testimonial and CTA section */}
+      <section className="flex flex-col items-center">
+        <div className="md:w-[72.78%] xl:w-full">
+          <p className="preset-3 md:preset-2 text-blue-950 mb-10 md:mb-16 text-center">
+            What they’ve said
+          </p>
+          {/* Testimonial */}
+          <div className="flex flex-col items-center gap-8 xl:gap-12">
+            <Carousel />
+            <Button style="orangeBtn">Get Started</Button>
+          </div>
         </div>
       </section>
     </main>

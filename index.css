@@ -77,3 +77,11 @@
 @utility featureText {
   @apply preset-5-r md:preset-4-r text-blue-950/50;
 }
+
+@utility dot {
+  @apply cursor-pointer w-2 h-2 border border-orange-400 rounded-full;
+}
+
+@utility active {
+  @apply bg-orange-400;
+}
