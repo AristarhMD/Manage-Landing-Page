@@ -73,3 +73,7 @@
 @utility footerNavItem {
   @apply cursor-pointer preset-4-r text-white hover:text-orange-400;
 }
+
+@utility featureText {
+  @apply preset-5-r md:preset-4-r text-blue-950/50;
+}
