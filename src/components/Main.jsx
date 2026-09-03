@@ -50,7 +50,7 @@ export function Main() {
       </section>
 
       {/* Testimonial and CTA section */}
-      <section className="flex flex-col items-center">
+      <section className="flex flex-col items-center gap-21.5 md:gap-23.75 xl:gap-45">
         <div className="md:w-[72.78%] xl:w-full">
           <p className="preset-3 md:preset-2 text-blue-950 mb-10 md:mb-16 text-center">
             What they’ve said
@@ -59,6 +59,15 @@ export function Main() {
           <div className="flex flex-col items-center gap-8 xl:gap-12">
             <Carousel />
             <Button style="orangeBtn">Get Started</Button>
+          </div>
+        </div>
+
+        <div className="bg-orange-400 w-full h-101.25 md:h-auto md:py-10 xl:py-16 px-10 flex items-center justify-center">
+          <div className=" flex flex-col xl:flex-row justify-between items-center gap-10  xl:w-277.5">
+            <p className="preset-2 text-white text-center md:max-w-115 xl:text-left">
+              Simplify how your team works today.
+            </p>
+            <Button style="whiteBtn">Get Started</Button>
           </div>
         </div>
       </section>

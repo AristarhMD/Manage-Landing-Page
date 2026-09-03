@@ -9,7 +9,7 @@ export function Carousel() {
 
   return (
     <div className="overflow-x-hidden flex flex-col gap-8 mx-2 md:mx-0">
-      <div className="flex justify-center items-center w-full h-68.5 pt-9 xl:gap-6 xl:translate-x-[12.5%]">
+      <div className="flex justify-center items-center w-full h-68.5 pt-9 xl:gap-6">
         {testimonials.map((card, id) => (
           <TestimonialCard
             key={id}
