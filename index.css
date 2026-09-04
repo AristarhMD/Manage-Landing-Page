@@ -5,8 +5,8 @@
   --color-black: #000;
   --color-gray-950: #1d1e25;
   --color-gray-900: #343a40;
-  --color-gray-950: #8d8d8d;
-  --color-gray-950: #fafafa;
+  --color-gray-400: #8d8d8d;
+  --color-gray-50: #fafafa;
   --color-orange-400: #f3603c;
   --color-orange-350: #f98f75;
   --color-orange-50: #fff0ec;
@@ -84,4 +84,8 @@
 
 @utility active {
   @apply bg-orange-400;
+}
+
+@utility inputEmail {
+  @apply w-full bg-white px-6 self-stretch rounded-[22px] placeholder:text-gray-400 invalid:[&:not(:placeholder-shown)]::ring-1 invalid:[&:not(:placeholder-shown)]::ring-inset invalid:[&:not(:placeholder-shown)]::ring-red-500 focus:outline-2 focus:outline-offset-2 focus:outline-blue-50;
 }
