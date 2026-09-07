@@ -122,7 +122,7 @@ export function Footer() {
           </ul>
           {logo}
         </div>
-        <p className="preset-5-m text-white/50 xl:col-start-4  xl:row-start-2">
+        <p className="preset-5-m text-white/50 xl:col-start-4  xl:row-start-2 xl:text-right">
           Copyright 2020. All Rights Reserved
         </p>
       </section>

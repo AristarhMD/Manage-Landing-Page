@@ -5,7 +5,10 @@ import { Carousel } from "./Carousel.jsx";
 
 export function Main() {
   return (
-    <main className="flex flex-col gap-28 md:gap-24 xl:gap-33">
+    <main
+      className="flex flex-col relative gap-28 md:gap-24 xl:gap-33 after:absolute after:w-42.5 after:h-94.5 after:bg-[url('./public/images/bg-tablet-pattern.svg')] after:bg-cover after:left-[75%] md:after:left-[80%]  xl:after:left-[-20%] xl:after:w-180 xl:after:h-180 after:top-[15%] md:after:top-[21%]
+    xl:after:top-[42%] after:-z-5"
+    >
       {/* Content section */}
       <section className="flex flex-col xl:flex-row items-center justify-between gap-6 px-6 md:px-12 xl:p-0 xl:mx-auto xl:w-277.5">
         <img
@@ -62,7 +65,7 @@ export function Main() {
           </div>
         </div>
 
-        <div className="bg-orange-400 w-full h-101.25 md:h-auto md:py-10 xl:py-16 px-10 flex items-center justify-center">
+        <div className="bg-orange-400 w-full h-101.25 md:h-auto md:py-10 xl:py-16 px-10 flex items-center justify-center bg-[url('./public/images/bg-simplify-section-mobile.svg')] bg-no-repeat bg-left md:bg-size-[auto_200px] xl:bg-[url('./public/images/bg-simplify-section-desktop.svg')] xl:bg-position-[18vw_100%] xl:bg-size-[100%_auto]">
           <div className=" flex flex-col xl:flex-row justify-between items-center gap-10  xl:w-277.5">
             <p className="preset-2 text-white text-center md:max-w-115 xl:text-left">
               Simplify how your team works today.
