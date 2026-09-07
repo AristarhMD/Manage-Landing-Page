@@ -51,7 +51,7 @@ export function Main() {
 
       {/* Testimonial and CTA section */}
       <section className="flex flex-col items-center gap-21.5 md:gap-23.75 xl:gap-45">
-        <div className="md:w-[72.78%] xl:w-full">
+        <div className="md:w-[72.78%] xl:w-full overflow-hidden">
           <p className="preset-3 md:preset-2 text-blue-950 mb-10 md:mb-16 text-center">
             What they’ve said
           </p>

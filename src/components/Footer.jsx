@@ -1,5 +1,6 @@
 import { Button } from "./reusable/Button";
 import { List } from "./reusable/List";
+import { useRef } from "react";
 
 export function Footer() {
   const logo = (
@@ -17,20 +18,28 @@ export function Footer() {
       </g>
     </svg>
   );
+
+  const inputRef = useRef(null);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    inputRef.current.value = "";
+  };
   return (
     <footer className="px-6 py-10 bg-gray-950 overflow-hidden">
-      <section className="mx-auto w-full md:w-[62.5%] flex flex-col xl:grid xl:grid-rows-[repeat(2,auto)]  xl:grid-cols-[repeat(4,min-content)] items-center xl:content-between gap-12 md:gap-14 xl:w-277.5">
+      <section className="mx-auto w-full md:w-[62.5%] flex flex-col xl:grid xl:grid-rows-[repeat(2,min-content)]  xl:grid-cols-[min-content_1fr_1fr_min-content] items-center xl:content-between gap-12 md:gap-14 xl:gap-y-0 xl:w-277.5">
         <form
+          onSubmit={handleSubmit}
           action="#"
-          className="w-full grid grid-cols-[1fr_min-content] grid-rows-[min-content_min-content] gap-2 md:gap-x-6 xl:col-start-4"
+          className="w-full grid grid-cols-[1fr_min-content] grid-rows-[min-content_min-content] gap-2 md:gap-x-6 xl:col-start-4 xl:row-start-1 xl:ml-auto"
         >
           <input
+            ref={inputRef}
             type="email"
             name="email"
             id="email"
             placeholder="Updats in you inbox..."
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-            className="peer inputEmail  xl:w-50"
+            className="peer inputEmail xl:w-50"
           />
           <p className="invisible peer-invalid:visible col-start-1 row-start-2 preset-6 text-red-500 ml-4">
             Please insert a valid email
@@ -49,12 +58,12 @@ export function Footer() {
             "Community",
             "Privacy Policy",
           ]}
-          listStyle="w-full grid grid-cols-[repeat(2,auto)] md:grid-cols-[repeat(4,auto)] xl:grid-cols-[repeat(2,auto)] grid-rows-[repeat(4,auto)] md:grid-rows-[repeat(2,auto)] xl:grid-rows-[repeat(4,auto)] grid-flow-col  gap-y-2 gap-x-20 md:gap-x-5 px-6 md:px-0 xl:col-start-2 xl:col-span-2 xl:row-start-1 xl:row-span-2"
+          listStyle="w-full grid grid-cols-[repeat(2,auto)] md:grid-cols-[repeat(4,auto)] xl:grid-cols-[repeat(2,auto)] grid-rows-[repeat(4,auto)] md:grid-rows-[repeat(2,auto)] xl:grid-rows-[repeat(4,auto)] grid-flow-col  gap-y-2 gap-x-20 md:gap-x-5 xl:gap-x-30 px-6 md:px-0 xl:col-start-2 xl:col-span-2 xl:row-start-1 xl:row-span-2"
           itemStyle="footerNavItem "
         />
 
-        <div className="mx-auto flex flex-col items-center gap-14 xl:col-start-1 xl:row-start-1 xl:row-span-2">
-          <ul className="flex items-center gap-8 xl:gap-4 justify-center">
+        <div className="mx-auto flex flex-col items-center gap-14 xl:col-start-1 xl:row-start-1 xl:row-span-2 xl:items-start">
+          <ul className="flex items-center gap-8 xl:gap-4 justify-center xl:order-2">
             <li className="group">
               <a href="https://www.facebook.com/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">

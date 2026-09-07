@@ -87,5 +87,5 @@
 }
 
 @utility inputEmail {
-  @apply w-full bg-white px-6 self-stretch rounded-[22px] placeholder:text-gray-400 invalid:[&:not(:placeholder-shown)]::ring-1 invalid:[&:not(:placeholder-shown)]::ring-inset invalid:[&:not(:placeholder-shown)]::ring-red-500 focus:outline-2 focus:outline-offset-2 focus:outline-blue-50;
+  @apply w-full bg-white px-6 self-stretch rounded-[22px] placeholder:text-gray-400  focus:outline-2 focus:outline-offset-2 focus:outline-blue-50 invalid:not-placeholder-shown:ring-1 invalid:not-placeholder-shown:ring-inset invalid:not-placeholder-shown:ring-red-500;
 }
