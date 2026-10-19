@@ -3,6 +3,8 @@ import cardsData from "../feature.js";
 import { FeatureCard } from "./reusable/FeatureCard.jsx";
 import { Carousel } from "./Carousel.jsx";
 
+import heroImg from "../assets/illustration-intro.svg";
+
 export function Main() {
   return (
     <main
@@ -12,7 +14,7 @@ export function Main() {
       {/* Content section */}
       <section className="flex flex-col xl:flex-row items-center justify-between gap-6 px-6 md:px-12 xl:p-0 xl:mx-auto xl:w-277.5">
         <img
-          src="../assets/illustration-intro.svg"
+          src={heroImg}
           alt="Hero image"
           className="object-cover md:w-135 xl:order-2"
         />
