@@ -12,7 +12,7 @@ export function Main() {
       {/* Content section */}
       <section className="flex flex-col xl:flex-row items-center justify-between gap-6 px-6 md:px-12 xl:p-0 xl:mx-auto xl:w-277.5">
         <img
-          src="../src/assets/illustration-intro.svg"
+          src="../assets/illustration-intro.svg"
           alt="Hero image"
           className="object-cover md:w-135 xl:order-2"
         />
@@ -58,7 +58,6 @@ export function Main() {
           <p className="preset-3 md:preset-2 text-blue-950 mb-10 md:mb-16 text-center">
             What they’ve said
           </p>
-          {/* Testimonial */}
           <div className="flex flex-col items-center gap-8 xl:gap-12">
             <Carousel />
             <Button style="orangeBtn">Get Started</Button>
